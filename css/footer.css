@@ -1,0 +1,45 @@
+footer{
+    position: relative;
+    margin-top: 10rem;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgb(248, 104, 104) 44%, rgb(240, 76, 76) 100%);
+    color: #fff;
+    font-weight: bolder;
+    box-shadow: 0 0 0.2rem 0.1rem grey;
+    padding: 1rem;
+}
+footer p{
+    text-align: center;
+}
+.div-logo{
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+}
+.div-logo:hover{
+    opacity: .7;
+}
+.div-logo h1{
+    font-size: 1.2rem;
+}
+.logo{
+    height: 20px;
+    width: 20px;
+    margin-left: 1rem;
+}
+footer a{
+    text-decoration: none;
+    margin-left: .3rem;
+    color: #fff;
+}
+footer a:hover{
+    color: rgb(36, 33, 33);
+}
+/*dark mode*/
+body.ativo footer{
+    background: linear-gradient(90deg, rgb(49, 48, 48) 44%, rgb(12, 12, 12) 100%);
+}
+body.ativo footer a:hover{
+    color: rgb(22, 221, 39);
+}

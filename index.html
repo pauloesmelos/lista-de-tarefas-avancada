@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="lista de tarefas, mais conhecida por todolist. Projeto feito por paulo melos">
+    <meta name="keywords" content="app lista de tarefas,to do list,pauloesmelos,paulo eduardo souza de melos,paulo melos">
+    <meta name="author" content="paulo eduardo souza de melos">
+    <link rel="icon" href="./imagens/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Tarefas - ToDoList</title>
+</head>
+<body>
+    <nav class="menu-nav">
+        <ul class="menu-1">
+            <li class="li-menu"><img class="icon-menu" src="./imagens/menu.png" alt="menu"></li>
+            <li>
+                <div class="div-search">
+                    <input type="text" placeholder="Buscar" name="buscar" id="buscar">
+                    <img class="icon-search" src="./imagens/search.png" alt="lupa buscar">
+                </div>
+            </li>
+        </ul>
+        <ul class="menu-2">
+            <li><img class="icon-add" src="./imagens/add.png" alt="nova tarefa"></li>
+            <li><img class="icon-darkmode" src="./imagens/dark-mode.png" alt="modo escuro"></li>
+            <li><a href="https://github.com/pauloesmelos" class="dev" target="_blank">Dev</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="menu-lateral">
+            <ul class="ul-menu-lateral">
+                <li>
+                    <a class="link-menu-lateral" href="#">
+                            <img class="hoje" src="./imagens/calendario-hoje.png">
+                        <span>Hoje</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-menu-lateral" href="#">
+                            <img class="rotina" src="./imagens/rotina-liquidificador.png">
+                        <span>Rotina</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-menu-lateral" href="#">
+                            <img class="pessoal" src="./imagens/user-pessoal.png">
+                        <span>Pessoal</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="conteudo-principal">
+            <div class="dia-atual">
+                <h1>Hoje</h1>
+                <span data-atual="on"></span>
+            </div>
+            <div class="criar-tarefa">
+                <div class="div-form1">
+                    <form id="todolist" action="">
+                        <label for="tarefa">Descrição</label>
+                        <input type="text"class="text" id="tarefa" name="tarefa" placeholder="O que você vai fazer?">
+                        <label for="prazo">Data</label>
+                        <input type="date" class="date" id="prazo" name="prazo" placeholder="dd/mm/aaaa">
+                        <label for="tipo">Tipo</label>
+                        <select id="tipo" name="tipo">
+                            <option value="Rotina">Rotina</option>
+                            <option value="Pessoal">Pessoal</option>
+                        </select>
+                        <label for="status">Status</label>
+                        <select id="status" name="status">
+                            <option value="Pendente">Pendente</option>
+                            <option value="Fazendo" >Fazendo</option>
+                            <option value="Realizado">Realizado</option>
+                        </select>
+                        <button class="add-tarefa">Adicionar Tarefa</button>
+                    </form>
+                </div>
+            </div>
+            <div class="tarefas-criadas">
+                <div class="div-table">
+                    
+                </div>
+            </div>
+            <div class="editar-tarefa">
+                <div class="darker"></div>
+                <div class="modal">
+                    <h2>Editar sua tarefa</h2>
+                    <label for="tarefa-edit">Descrição</label>
+                        <form action="" name="formEditar">
+                            <input type="text" class="text" id="tarefa-edit" name="tarefas" placeholder="O que você vai fazer?">
+                            <label for="prazo-edit">Data</label>
+                            <input type="date" class="date" id="prazo-edit" name="prazo" placeholder="dd/mm/aaaa">
+                            <label for="tipo-edit">Tipo</label>
+                            <select id="tipo-edit" name="tipo">
+                                <option value="Rotina">Rotina</option>
+                                <option value="Pessoal">Pessoal</option>
+                            </select>
+                            <label for="status-edit">Status</label>
+                            <select id="status-edit" name="status">
+                                <option value="Pendente">Pendente</option>
+                                <option value="Fazendo" >Fazendo</option>
+                                <option value="Realizado">Realizado</option>
+                            </select>
+                        </form>
+                        <div class="div-buttons">
+                            <button class="add-tarefa button-edit">Editar Tarefa</button>
+                            <button class="add-tarefa button-edit-cancel close">Cancelar</button>
+                        </div>
+                        <button class="close" data-modal="fechar">x</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="div-logo">
+            <h1>ToDoList - Lista de Tarefas</h1>
+            <img src="./imagens/logo.png" class="logo">
+        </div>
+        <p> &copy; 2022 - Feito por paulo melos |<a href="https://github.com/pauloesmelos/minha-lista-de-tarefas" target="_blank">Acesse o repositório e interaja ❤ </a></p>
+    </footer>
+    <script type="module" src="./script/script.js"></script>
+    <!--COLOCAR NO FOOTER<a href="https://www.flaticon.com/free-icons/more" title="more icons">More icons created by Icon Smart - Flaticon</a>-->
+</body>
+</html>

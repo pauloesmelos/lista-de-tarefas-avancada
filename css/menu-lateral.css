@@ -1,0 +1,76 @@
+.menu-lateral{
+    width: 20%;
+    height: calc(100vh);/*calc(100vh - 105px)*/
+    background-color: rgb(245, 244, 244);
+    padding: 1rem;
+    animation: escondeMenuLateral .5s forwards;
+}
+.menu-lateral.ativo{
+    display: block;
+    animation: animaMenuLateral .5s forwards;
+}
+/*icons*/
+.hoje{  
+    width: 22px;
+    height: 22px;
+}
+.rotina{    
+    width: 22px;
+    height: 22px;
+}
+.pessoal{
+    width: 22px;
+    height: 22px;
+}
+/**/
+.ul-menu-lateral{
+    margin-top: 1rem;
+}
+.ul-menu-lateral li{
+    padding: 5px;
+}
+.ul-menu-lateral li:hover{
+    background-color: rgb(228, 227, 227);
+    border-radius: 5px;
+}
+.link-menu-lateral{
+    display: flex;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.link-menu-lateral span{
+    margin-left: 1rem;
+}
+/*animacoes*/
+@keyframes animaMenuLateral{
+    from{
+        opacity: 0;
+        transform: translate3d(-10rem,0,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+@keyframes escondeMenuLateral{
+    from{
+        transform: translate3d(0,0,0);
+    }
+    to{
+        transform: translate3d(-20rem,0,0);
+        visibility: hidden;
+    }
+}
+/*darkmode*/
+body.ativo .menu-lateral{
+    background-color: rgba(0,0,0,.5);
+}
+body.ativo span{
+    color: #fff;
+    font-weight: bolder;
+}
+body.ativo .ul-menu-lateral li:hover{
+    background-color: #000;
+}

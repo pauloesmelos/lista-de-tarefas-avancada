@@ -1,0 +1,17 @@
+@import './css/menu.css';
+@import './css/menu-lateral.css';
+@import './css/conteudo-principal.css';
+@import './css/footer.css';
+@import './css/editar-tarefa.css';
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+body{
+    background-color: #fff;
+}
+main{
+    display: flex;
+}

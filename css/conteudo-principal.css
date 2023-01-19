@@ -1,0 +1,170 @@
+/*data atual - dia mes ano*/
+.conteudo-principal{
+    width: 100%;
+}
+.dia-atual{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.dia-atual h1{
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dia-atual span{
+    color: grey;
+    font-weight: 400;
+    font-size: 14px;
+    margin: .4rem 0 0 1rem;
+}
+/*criar tarefa*/
+.criar-tarefa{
+    margin: 1rem 0 0 18.5rem;
+}
+.div-form1{
+    border: 1px solid rgb(221, 218, 218);
+    width: 66%;
+    border-radius: 5px;
+    box-shadow: 0 0 .5rem .1rem #888;
+}
+#todolist{
+    padding: 1rem;
+}
+#todolist label{
+    margin: 1rem 0 .5rem 0;
+    display: block;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #888;
+}
+.add-tarefa{
+    display: block;
+    margin-top: 1rem;
+    padding: .8rem 1rem;
+    background-color: hsl(140, 87%, 38%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: .3s;
+}
+.add-tarefa.adicionada{
+    background: hsl(140, 87%, 38%) url(../imagens/check.png) center center no-repeat;
+    overflow: hidden;
+    text-indent: -999px;
+    padding: .7rem 4rem;
+}
+.add-tarefa:hover{
+    transform: scale(1.07);
+    opacity: .5;
+}
+.text{
+    width: 100%;
+    padding: .5rem 1rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgb(199, 199, 199);
+    background-color: rgb(248, 245, 245);
+}
+.date{
+    background-color: rgb(248, 245, 245);
+    color: rgb(124, 123, 123);
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: .5rem .5rem;
+    border-radius: 5px;
+    border: 1px solid rgb(199, 199, 199);
+    letter-spacing: 2px;
+    box-sizing: border-box;
+}
+select{
+    padding: .4rem;
+    width: 80%;
+    background-color: rgb(248, 245, 245);
+    color: rgb(124, 123, 123);
+    border-radius: 5px;
+    border: 1px solid rgb(199, 199, 199);
+}
+#todolist input:focus, #todolist select:focus{
+    outline: 3px solid rgb(41, 158, 226);
+}
+/*tarefas criadas*/
+.tarefas-criadas{
+    width: 100%;
+    margin-top: 2rem;
+}
+.tabela-tarefas{
+    margin-left: 13rem;
+    text-align: center;
+    padding: .5rem;
+    width: 65%;
+    font-family: sans-serif;
+    border-collapse: collapse;/*junta todas celulas com o inicio e fim da tabela, além de juntar cada coluna(eliminando a linha branca que as divide)*/
+    box-shadow: 0 0 .1rem .1rem rgb(206, 202, 202);
+}
+.tabela-cabecalho .primeira-linha{
+    width: 40%;
+}
+.tabela-tarefas th{
+    background-color: rgb(248, 104, 104);
+    color: #fff;
+    font-weight: bolder;
+    padding: 1rem;
+}
+.tabela-tarefas tr{
+    background-color: #fff;
+}
+.tabela-tarefas td{
+    padding: .6rem;
+}
+.tabela-tarefas tr:nth-of-type(2n){
+    /*color: hsl(128, 87%, 42%);*/
+    background-color: rgba(153, 149, 149, 0.1);
+}
+.left{/*alinhando a esquerda*/
+
+    text-align: left;
+}
+.excluir{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.excluir:hover{
+    opacity: .3;
+}
+.editar{
+    cursor: pointer;
+}
+.editar:hover{
+    opacity: .5;
+}
+.stt.pendente{
+    color:red;
+}
+.stt.realizado{
+    color:green;
+    text-decoration: line-through;
+}
+/*darkmode*/
+body.ativo .dia-atual h1{
+    color: #fff;
+    font-weight: lighter;
+}
+body.ativo #todolist label{
+    color: #fff;
+    font-weight: bolder;
+}
+body.ativo .tabela-tarefas tr:nth-of-type(2n),body.ativo .tabela-tarefas th{
+    background-color: rgb(75, 73, 73);
+    color: #fff;
+    font-weight: bolder;
+}
+body.ativo tr{
+    background-color: rgb(226, 223, 223);
+}
+body.ativo .div-form1{
+    background-color: #444;
+}
