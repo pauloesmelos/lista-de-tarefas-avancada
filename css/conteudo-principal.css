@@ -1,3 +1,10 @@
+/*variaveis*/
+:root{
+    --vermelho: rgb(236, 49, 49);
+    --vermelho-claro: rgb(248, 104, 104);
+    --verde-button: hsl(140, 87%, 38%);
+    --branco-claro: #fff;
+}
 /*data atual - dia mes ano*/
 .conteudo-principal{
     width: 100%;
@@ -26,6 +33,8 @@
     width: 66%;
     border-radius: 5px;
     box-shadow: 0 0 .5rem .1rem #888;
+    padding: 1rem;
+    min-width: 50%;
 }
 #todolist{
     padding: 1rem;
@@ -41,8 +50,8 @@
     display: block;
     margin-top: 1rem;
     padding: .8rem 1rem;
-    background-color: hsl(140, 87%, 38%);
-    color: #fff;
+    background-color: var(--verde-button);
+    color: var(--branco-claro);
     border: none;
     border-radius: 5px;
     font-weight: bolder;
@@ -50,7 +59,7 @@
     transition: .3s;
 }
 .add-tarefa.adicionada{
-    background: hsl(140, 87%, 38%) url(../imagens/check.png) center center no-repeat;
+    background: var(--verde-button) url(../imagens/check.png) center center no-repeat;
     overflow: hidden;
     text-indent: -999px;
     padding: .7rem 4rem;
@@ -65,10 +74,10 @@
     box-sizing: border-box;
     border-radius: 5px;
     border: 1px solid rgb(199, 199, 199);
-    background-color: rgb(248, 245, 245);
+    background-color: var(--branco-claro);
 }
 .date{
-    background-color: rgb(248, 245, 245);
+    background-color: var(--branco-claro);
     color: rgb(124, 123, 123);
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
@@ -82,7 +91,7 @@
 select{
     padding: .4rem;
     width: 80%;
-    background-color: rgb(248, 245, 245);
+    background-color: var(--branco-claro);
     color: rgb(124, 123, 123);
     border-radius: 5px;
     border: 1px solid rgb(199, 199, 199);
@@ -103,18 +112,20 @@ select{
     font-family: sans-serif;
     border-collapse: collapse;/*junta todas celulas com o inicio e fim da tabela, além de juntar cada coluna(eliminando a linha branca que as divide)*/
     box-shadow: 0 0 .1rem .1rem rgb(206, 202, 202);
+    animation: show-table .8s forwards;
 }
 .tabela-cabecalho .primeira-linha{
     width: 40%;
 }
 .tabela-tarefas th{
-    background-color: rgb(248, 104, 104);
-    color: #fff;
+    background-color: var(--vermelho-claro);
+    color: var(--branco-claro);
     font-weight: bolder;
     padding: 1rem;
 }
 .tabela-tarefas tr{
-    background-color: #fff;
+    background-color: var(--branco-claro);
+    animation: show-table .8s forwards;
 }
 .tabela-tarefas td{
     padding: .6rem;
@@ -142,24 +153,44 @@ select{
     opacity: .5;
 }
 .stt.pendente{
-    color:red;
+    color: var(--vermelho);
 }
 .stt.realizado{
-    color:green;
+    color: var(--verde-button);
     text-decoration: line-through;
+}
+.error{
+    display: none;
+    color: var(--vermelho);
+    margin: 1.5rem 0 0 1rem;
+    font-weight: bolder;
+}
+.error.ativo{/*disparado por campos vazios - descricao e data*/
+    display: block;
+}
+/*anmacoes*/
+@keyframes show-table{
+    from{
+        opacity: 0;
+        transform: translate3d(-10rem,0,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
 }
 /*darkmode*/
 body.ativo .dia-atual h1{
-    color: #fff;
+    color: var(--branco-claro);
     font-weight: lighter;
 }
 body.ativo #todolist label{
-    color: #fff;
+    color: var(--branco-claro);
     font-weight: bolder;
 }
 body.ativo .tabela-tarefas tr:nth-of-type(2n),body.ativo .tabela-tarefas th{
     background-color: rgb(75, 73, 73);
-    color: #fff;
+    color: var(--branco-claro);
     font-weight: bolder;
 }
 body.ativo tr{

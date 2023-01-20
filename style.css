@@ -3,6 +3,7 @@
 @import './css/conteudo-principal.css';
 @import './css/footer.css';
 @import './css/editar-tarefa.css';
+@Import './css//media-query.css';
 
 *{
     padding: 0;

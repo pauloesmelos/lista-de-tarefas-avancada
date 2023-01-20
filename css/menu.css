@@ -25,7 +25,7 @@
     top: 5px;
 }
 /**/
-.dev{
+.btn-menu{
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
@@ -33,9 +33,15 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: bolder;
-    position: absolute;
+    border-radius: 4px;
+    line-height: 40px;
+    transition: .3s;
 }
-.menu-1 li:hover, .menu-nav .menu-2 li:hover,.dev:hover{
+.btn-menu:hover{
+    background-color: #fff;
+    color: rgb(248, 104, 104);
+}
+.menu-1 li:hover, .menu-nav .menu-2 li img:hover{
     background-color: rgba(255, 254, 254, 0.3);
     cursor: pointer;
     transition: .4s;

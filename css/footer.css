@@ -8,17 +8,23 @@ footer{
     font-weight: bolder;
     box-shadow: 0 0 0.2rem 0.1rem grey;
     padding: 1rem;
+    display: flex;
 }
 footer p{
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .div-logo{
     display: flex;
-    position: absolute;
     cursor: pointer;
+    margin-bottom: 5rem;
 }
-.div-logo:hover{
-    opacity: .7;
+.animacao{
+    width: 16rem;
+    height: 2rem;
+}
+.animacao:hover .div-logo{/*animacao logo*/
+    animation: anima-logo .3s none;
 }
 .div-logo h1{
     font-size: 1.2rem;
@@ -34,12 +40,14 @@ footer a{
     color: #fff;
 }
 footer a:hover{
-    color: rgb(36, 33, 33);
+    border-bottom: 1px solid #fff;
 }
 /*dark mode*/
 body.ativo footer{
     background: linear-gradient(90deg, rgb(49, 48, 48) 44%, rgb(12, 12, 12) 100%);
 }
-body.ativo footer a:hover{
-    color: rgb(22, 221, 39);
+/*animacoes*/
+@keyframes anima-logo{
+    33%{transform: rotate(-15deg);}
+    100%{transform: rotate(0);}
 }

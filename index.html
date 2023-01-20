@@ -23,28 +23,29 @@
             </li>
         </ul>
         <ul class="menu-2">
-            <li><img class="icon-add" src="./imagens/add.png" alt="nova tarefa"></li>
             <li><img class="icon-darkmode" src="./imagens/dark-mode.png" alt="modo escuro"></li>
-            <li><a href="https://github.com/pauloesmelos" class="dev" target="_blank">Dev</a></li>
+            <li><a href="https://medium.com/@paulo.melos" class="btn-menu" target="_blank">Medium</a></li>
+            <li><a href="https://www.linkedin.com/in/pauloeduardomelos/" class="btn-menu" target="_blank">Linkedin</a></li>
+            <li><a href="https://github.com/pauloesmelos" class="btn-menu" target="_blank">Github</a></li>
         </ul>
     </nav>
     <main>
         <section class="menu-lateral">
             <ul class="ul-menu-lateral">
                 <li>
-                    <a class="link-menu-lateral" href="#">
+                    <a class="link-menu-lateral" href="#criar-tarefa">
                             <img class="hoje" src="./imagens/calendario-hoje.png">
                         <span>Hoje</span>
                     </a>
                 </li>
                 <li>
-                    <a class="link-menu-lateral" href="#">
+                    <a class="link-menu-lateral" href="#criar-tarefa">
                             <img class="rotina" src="./imagens/rotina-liquidificador.png">
                         <span>Rotina</span>
                     </a>
                 </li>
                 <li>
-                    <a class="link-menu-lateral" href="#">
+                    <a class="link-menu-lateral" href="#criar-tarefa">
                             <img class="pessoal" src="./imagens/user-pessoal.png">
                         <span>Pessoal</span>
                     </a>
@@ -57,7 +58,7 @@
                 <h1>Hoje</h1>
                 <span data-atual="on"></span>
             </div>
-            <div class="criar-tarefa">
+            <div class="criar-tarefa" id="criar-tarefa">
                 <div class="div-form1">
                     <form id="todolist" action="">
                         <label for="tarefa">Descrição</label>
@@ -75,7 +76,10 @@
                             <option value="Fazendo" >Fazendo</option>
                             <option value="Realizado">Realizado</option>
                         </select>
-                        <button class="add-tarefa">Adicionar Tarefa</button>
+                        <div class="div-buttons">
+                            <button class="add-tarefa">Adicionar Tarefa</button>
+                            <span class="error">Preencha os campos de Descrição e Data</span>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -115,11 +119,13 @@
         </section>
     </main>
     <footer>
-        <div class="div-logo">
-            <h1>ToDoList - Lista de Tarefas</h1>
-            <img src="./imagens/logo.png" class="logo">
+        <div class="animacao">
+            <div class="div-logo">
+                <h1>ToDoList - Lista de Tarefas</h1>
+                <img src="./imagens/logo.png" class="logo">
+            </div>
         </div>
-        <p> &copy; 2022 - Feito por paulo melos |<a href="https://github.com/pauloesmelos/minha-lista-de-tarefas" target="_blank">Acesse o repositório e interaja ❤ </a></p>
+        <p> &copy; 2022 - Feito por paulo melos |<a href="https://github.com/pauloesmelos/lista-de-tarefas-avancada" target="_blank">Avalie o repositório no GitHub </a></p>
     </footer>
     <script type="module" src="./script/script.js"></script>
     <!--COLOCAR NO FOOTER<a href="https://www.flaticon.com/free-icons/more" title="more icons">More icons created by Icon Smart - Flaticon</a>-->

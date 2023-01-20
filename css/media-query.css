@@ -1,0 +1,26 @@
+/*menu*/
+@media (max-width: 800px){
+    /*menu*/
+    .menu-2{
+        justify-content: left;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .menu-2 li{
+        margin: 1rem 1rem 0 0;
+    }
+    .menu-nav{
+        display: block;
+    }
+    /*conteudo-principal*/
+    .criar-tarefa{
+        margin: 1rem 0 0 1rem;
+    }
+    /*footer*/
+    .div-logo{
+        margin-right: 1rem;
+    }
+    .logo{
+        margin: 0;
+    }
+}
