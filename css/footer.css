@@ -7,7 +7,7 @@ footer{
     color: #fff;
     font-weight: bolder;
     box-shadow: 0 0 0.2rem 0.1rem grey;
-    padding: 1rem;
+    padding: .5rem;
     display: flex;
 }
 footer p{
@@ -32,7 +32,7 @@ footer p{
 .logo{
     height: 20px;
     width: 20px;
-    margin-left: 1rem;
+    margin-left: .3rem;
 }
 footer a{
     text-decoration: none;

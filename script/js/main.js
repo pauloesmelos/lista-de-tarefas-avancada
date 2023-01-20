@@ -73,10 +73,10 @@ export default function initMain(){
         </thead>
         <tbody class="tabela-corpo">
             <tr>
-                <td class="left">${inputs.descricao.tarefa}</td>
-                <td>${inputs.descricao.prazo}</td>
-                <td>${inputs.descricao.tipo}</td>
-                <td class="stt ${inputs.descricao.status.toLowerCase()}">${inputs.descricao.status}</td>
+                <td class="left" data-label="Descricao">${inputs.descricao.tarefa}</td>
+                <td data-label="Prazo">${inputs.descricao.prazo}</td>
+                <td data-label="Tipo">${inputs.descricao.tipo}</td>
+                <td class="stt ${inputs.descricao.status.toLowerCase()}" data-label="Status">${inputs.descricao.status}</td>
                 <td> <img src="./imagens/tres-pontos.png" class="editar"></td>
                 <td><img src="./imagens/trash.png" class="excluir"></td>
             </tr>
@@ -90,10 +90,10 @@ export default function initMain(){
         const task = document.createElement('tr');
         task.innerHTML = `
         <tr>
-            <td class="left">${inputs.descricao.tarefa}</td>
-            <td>${inputs.descricao.prazo}</td>
-            <td>${inputs.descricao.tipo}</td>
-            <td class="stt ${inputs.descricao.status.toLowerCase()}">${inputs.descricao.status}</td>
+            <td class="left" data-label="Descricao">${inputs.descricao.tarefa}</td>
+            <td data-label="Prazo">${inputs.descricao.prazo}</td>
+            <td data-label="Tipo">${inputs.descricao.tipo}</td>
+            <td class="stt ${inputs.descricao.status.toLowerCase()}" data-label="Status">${inputs.descricao.status}</td>
             <td> <img src="./imagens/tres-pontos.png" class="editar"></td>
             <td><img src="./imagens/trash.png" class="excluir"></td>
         </tr>

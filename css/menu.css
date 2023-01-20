@@ -92,3 +92,6 @@ body.ativo{
 body.ativo .menu-nav{
     background-color: #222;
 }
+body.ativo .icon-darkmode{
+    filter: contrast(100);
+}

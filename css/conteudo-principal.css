@@ -30,7 +30,7 @@
 }
 .div-form1{
     border: 1px solid rgb(221, 218, 218);
-    width: 66%;
+    width: 50%;
     border-radius: 5px;
     box-shadow: 0 0 .5rem .1rem #888;
     padding: 1rem;
@@ -108,7 +108,7 @@ select{
     margin-left: 13rem;
     text-align: center;
     padding: .5rem;
-    width: 65%;
+    max-width: 65%;
     font-family: sans-serif;
     border-collapse: collapse;/*junta todas celulas com o inicio e fim da tabela, além de juntar cada coluna(eliminando a linha branca que as divide)*/
     box-shadow: 0 0 .1rem .1rem rgb(206, 202, 202);

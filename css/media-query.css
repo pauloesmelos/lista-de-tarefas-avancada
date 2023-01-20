@@ -14,13 +14,57 @@
     }
     /*conteudo-principal*/
     .criar-tarefa{
-        margin: 1rem 0 0 1rem;
+        margin: 1rem 0 0 1rem;          
     }
+    /*table*/
+    .tabela-tarefas{
+        margin-left: 1rem;
+        width: 100%;
+     }
+     .tabela-cabecalho{
+        display: none;
+     }
+     .tabela-tarefas tr{
+        border-bottom: 2px solid rgb(224, 55, 55);
+     }
+     .tabela-tarefas td{
+        display: block;
+        text-align: right;
+        border-bottom: 1px dotted rgb(224, 221, 221);
+        margin-left: 1rem;
+     }
+     .tabela-tarefas td:before{
+        content:  attr(data-label);
+        float: left;
+     }
     /*footer*/
     .div-logo{
         margin-right: 1rem;
     }
+    footer p{
+        max-width: 30%;
+    }
     .logo{
         margin: 0;
+    }
+}
+@media (max-width: 450px){
+    /*menu*/
+    .menu-2{
+        display: block;
+    }
+     /*menu lateral*/
+     .link-menu-lateral span{
+        margin-left: .3rem;       
+    }
+    .link-menu-lateral{
+        display: block;
+        text-align: center;
+    }
+    /*modal*/
+    .modal{
+        width: 60%;
+        left: 10%;
+
     }
 }
