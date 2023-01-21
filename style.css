@@ -4,6 +4,7 @@
 @import './css/footer.css';
 @import './css/editar-tarefa.css';
 @Import './css//media-query.css';
+@import './css/search.css';
 
 *{
     padding: 0;

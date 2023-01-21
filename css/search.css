@@ -1,0 +1,35 @@
+.div-results{
+    background-color: #fff;
+    width: 13.8rem;
+    margin-top: 3rem;
+    position: absolute;
+    box-shadow: 0 0 1px 1px rgb(226, 223, 223);
+    z-index: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+.div-results.ativo{
+    display: block;
+}
+.results{
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
+.results.ativo{
+    display: block;
+}
+.span-results{
+    display: block;
+    color: gray;
+    margin-top: .5rem;
+}
+.title{
+    color: rgb(99, 94, 94);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.show-results{
+    border-bottom: 1px solid rgb(233, 50, 50);
+    text-align: left;
+}

@@ -17,8 +17,18 @@
             <li class="li-menu"><img class="icon-menu" src="./imagens/menu.png" alt="menu"></li>
             <li>
                 <div class="div-search">
-                    <input type="text" placeholder="Buscar" name="buscar" id="buscar">
+                    <input type="text" placeholder="Buscar pela Descrição" name="buscar" id="buscar">
                     <img class="icon-search" src="./imagens/search.png" alt="lupa buscar">
+                </div>
+                <div class="div-results resultado">
+                    <div class="results resultado">
+                        <!-- <div class="show-results">
+                            <span class="span-results"><span class="title">Descrição</span>: Teste 2</span>
+                            <span class="span-results"><span class="title">Data</span>: 21/01/2023</span>
+                            <span class="span-results"><span class="title">Tipo</span>: Rotina</span>
+                            <span class="span-results"><span class="title">Status</span>: Pendente</span>
+                        </div>   -->  
+                    </div>
                 </div>
             </li>
         </ul>
@@ -89,8 +99,8 @@
                 </div>
             </div>
             <div class="editar-tarefa">
-                <div class="darker"></div>
-                <div class="modal">
+                <div class="darker" data-modal="on"></div>
+                <div class="modal" data-modal="on">
                     <h2>Editar sua tarefa</h2>
                     <label for="tarefa-edit">Descrição</label>
                         <form action="" name="formEditar">

@@ -4,6 +4,7 @@ export default function initMain(){
     const button = document.querySelector('.add-tarefa');
     const divTable = document.querySelector('.div-table');
     const darkerModal = document.querySelector('.darker');
+    const modal = document.querySelector('.modal');
     const formEdit = document.forms.formEditar;//edit
     const buttonAdd = document.querySelector('.button-edit');//edit
     //const tbody = document.querySelector('.tabela-corpo');
@@ -145,12 +146,17 @@ export default function initMain(){
             e.value = tr[i].innerText;      
         });
     };
+    const abrirOuFecharModal = (classe) => {
+        const elementos = document.querySelectorAll(classe);
+        elementos.forEach((e) => e.classList.toggle('ativo'));
+    }
     const alterarTarefa = (event) => {//editar ou excluir
         const tr = event.target.closest('tr');//função que pega o primeiro elemento informado no parametro
         event.target.classList.contains('excluir') ? tr.remove() : undefined;
         if(event.target.classList.contains('editar')){
-            darkerModal.classList.add('ativo');
-            darkerModal.nextElementSibling.classList.add('ativo');//nextElementSibling ou selecionar o modal com document.querySelector,tanto faz
+            abrirOuFecharModal('[data-modal="on"]')
+            //darkerModal.classList.add('ativo');
+            //darkerModal.nextElementSibling.classList.add('ativo');//nextElementSibling ou selecionar o modal com document.querySelector,tanto faz
             trQueSeraMudado(tr);
             preencherInputsEditar();//preenche com os dados originais
         }
@@ -185,6 +191,7 @@ export default function initMain(){
         array.push(edit.valueTipo = (edit.valueTipo === undefined) ? 'Rotina' : edit.valueTipo);
         array.push(edit.valueStatus = (edit.valueStatus === undefined) ? 'Pendente' : edit.valueStatus);
         editarTr(array);
+        abrirOuFecharModal('[data-modal="on"]');
     }
     //add os eventos
     form.addEventListener('input',getTarefa);

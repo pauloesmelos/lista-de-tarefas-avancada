@@ -17,6 +17,7 @@
 .icon-darkmode{
     filter: brightness(200%);
     filter: grayscale(100%);
+    cursor: pointer;
 }
 .icon-search{
     position: absolute;
@@ -43,11 +44,12 @@
 }
 .menu-1 li:hover, .menu-nav .menu-2 li img:hover{
     background-color: rgba(255, 254, 254, 0.3);
-    cursor: pointer;
+    
     transition: .4s;
 }
 .li-menu{
     width: 2rem;
+    cursor: pointer;
 }
 .menu-1{
     display: flex;
@@ -72,6 +74,8 @@
     border: 1px solid transparent;
     border-radius: 5px;
     padding: 10px 0 10px 50px;
+    box-sizing: border-box;
+    text-align: left;
 }
 #buscar:hover{
     background-color: rgba(247, 217, 217, 0.5);
