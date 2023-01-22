@@ -1,9 +1,11 @@
 <h2> Informações: </h2>
+<p> Site desenvolvido para aprimorar a manipulação do DOM, onde é feita um CRUD com as tarefas criadas pelo usuário
 <p>Interações registradas na plataforma Jira, deixando o desenvolvimento mais organizado.</p>
 <p>Acesse o quadro de tarefas <a href="https://paulomelos.atlassian.net/jira/core/projects/ALDTT/board?atlOrigin=eyJpIjoiNTY1NTMyZGZlY2VkNDc4MTgwYjZmZjFkZmIzYTRmN2MiLCJwIjoiaiJ9" target="_blank">
 aqui</a></p>
 
 <p>Você pode <b>acessar o site</b><a href="https://todolist-avancada.vercel.app" target="_blank"> aqui</a>
+<p>Ícones e imagens retiradas do https://www.flaticon.com/</p>
 <br>
 <br>
 <br>
