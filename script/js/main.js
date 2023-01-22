@@ -1,13 +1,10 @@
 export default function initMain(){
     //variaveis
-    const form = document.forms[0];
+    const form = document.forms.todolist;
     const button = document.querySelector('.add-tarefa');
     const divTable = document.querySelector('.div-table');
-    const darkerModal = document.querySelector('.darker');
-    const modal = document.querySelector('.modal');
     const formEdit = document.forms.formEditar;//edit
     const buttonAdd = document.querySelector('.button-edit');//edit
-    //const tbody = document.querySelector('.tabela-corpo');
 
     //objeto com os dados de todos inputs
     const inputs = {//pegando dados do form de forma dinamica

@@ -48,18 +48,38 @@
         margin: 0;
     }
 }
+@media (max-width: 600px){
+    .div-form1{
+        width: 80%;
+    }
+    #todolist input{
+        width: 100%;
+    }
+}
 @media (max-width: 450px){
     /*menu*/
+    .div-search{
+        position: relative;
+        margin-left: 0;
+    }
     .menu-2{
         display: block;
+        margin-top: 3rem;
     }
      /*menu lateral*/
      .link-menu-lateral span{
         margin-left: .3rem;       
     }
+    .icon-menu{
+        display: none;
+    }
     .link-menu-lateral{
         display: block;
         text-align: center;
+    }
+    .menu-lateral.ativo{
+        display: none;
+        animation: none;
     }
     /*modal*/
     .modal{
